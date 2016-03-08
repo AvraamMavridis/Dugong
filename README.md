@@ -1,6 +1,11 @@
 # Dugong
 Minimal State Container for React Apps using RxJS
 
+[![npm version](https://badge.fury.io/js/dugong.svg)](https://badge.fury.io/js/dugong)
+[![Build Status](https://travis-ci.org/AvraamMavridis/Dugong.svg?branch=master)](https://travis-ci.org/AvraamMavridis/Dugong)
+[![CocoaPods](https://img.shields.io/cocoapods/l/AFNetworking.svg)]()
+[![semantic-versioning](https://img.shields.io/badge/semantic%20-versioning-green.svg)]()
+
 Dugong is a minimal state single-store container for React that uses RxJS. 
 You can use it with Redux/Flux or any other pattern/framework although that is not nessecary.
 
@@ -103,3 +108,15 @@ class MyComponent extends Component
 ```
 
 ### ...or you can even dispatch an action with Redux (or anything similar) and then use updateStore to change the global state of your application. 
+
+## Contributing
+Feel free to open issues, make suggestions or send PRs.
+This project adheres to the Contributor Covenant [code of conduct](http://contributor-covenant.org/). By participating, you are expected to uphold this code.
+
+## Contact
+
+E-mail : avr.mav@gmail.com
+Twitter: [@avraamakis](https://twitter.com/avraamakis)
+
+### License
+MIT
