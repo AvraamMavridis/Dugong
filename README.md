@@ -8,7 +8,7 @@ You can use it with Redux/Flux or any other pattern/framework although that is n
 
 I made Dugong because I wanted a more clear way to know what every component consumes from the global state. Passing attributes through the props in apps with deep hierarchies many times leads to confusion and decrease the developement speed. Imagine a scenario where you have to inspect the parent of the parent of the parent of a component to know why a property is passed to it and if its value is the same as the value that the parent have or if the parent has manipulate it. Ofcourse you can still pass props from the parents, it is just my opinion that you should avoid it. Also I wanted to be able to have a Store on which I can iterate using reactive programming methods.
 
-# How to use it
+# How to pass the data from the Store to the Components
 
 ### Create your Store with its initial state
 
@@ -40,7 +40,7 @@ class MyHelloWorldComponent extends Component
 }
 ```
 
-### You can also get the Store and the rxjs methods on it.
+### You can also get the Store and use rxjs methods on it.
 
 ```js
 import { getStore } from 'dugong';
@@ -59,3 +59,47 @@ class MyHelloWorldComponent extends Component
 }
 ```
 
+# How to update the Store
+
+### Dugong is not opinionated on how to structure your application, you can use `updateStore()` directly inside the components.
+
+```js
+import { updateStore } from 'dugong';
+
+class MyComponent extends Component
+{
+  update( something )
+  {
+     updateStore( { something } );
+  }
+  render(){
+    return <input onChange={ e => this.updateStore( e.target.value ) }</input>;
+  }
+}
+```
+
+### You can create services that will update parts of the store and inject them inside your components
+
+```js
+// UIService
+import { updateStore } from 'dugong';
+
+export const updateSomething = value => updateStore( { something : value } );
+
+
+// MyComponent
+import UIService from 'dugong';
+
+class MyComponent extends Component
+{
+  update( value )
+  {
+     UIService.updateSomething( value );
+  }
+  render(){
+    return <input onChange={ e => this.updateStore( e.target.value ) }</input>;
+  }
+}
+```
+
+### ...or you can even dispatch an action with Redux (or anything similar) and then use updateStore to change the global state of your application. 
