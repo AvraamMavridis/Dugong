@@ -10,7 +10,7 @@ I made Dugong because I wanted a more clear way to know what every component con
 
 # How to use it
 
-### 1.Create your Store with its initial state
+### Create your Store with its initial state
 
 ```js
 import { createStore } from 'dugong';
@@ -26,7 +26,7 @@ const initialState =  {
 createStore( initialState );
 ```
 
-### 2.Connect your component with the Store and define which parameters of the store you want to listen.
+### Connect your component with the Store and define which parameters of the store you want to listen.
 
 ```js
 import { connect } from 'dugong';
@@ -40,4 +40,22 @@ class MyHelloWorldComponent extends Component
 }
 ```
 
+### You can also get the Store and the rxjs methods on it.
+
+```js
+import { getStore } from 'dugong';
+
+class MyHelloWorldComponent extends Component
+{
+  componentWillMount()
+  {
+    getStore().map( ( { ui } ) => ui.something )
+              .filter( something => something.length > 4 )
+              .subscribe( something => this.setState( { something } ) );
+  }
+  render(){
+    return <div>{ this.state.something }</div>;
+  }
+}
+```
 
