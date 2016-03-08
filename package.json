@@ -1,6 +1,6 @@
 {
   "name": "dugong",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimal State Container for React Apps using RxJS",
   "scripts": {
     "test": "npm run compiletests && mocha --compilers js:babel-register --require babel-polyfill",
@@ -24,7 +24,10 @@
     "State",
     "Redux",
     "Flux",
-    "RxJS"
+    "RxJS",
+    "Dugong",
+    "dugong",
+    "RX"
   ],
   "author": "Avraam Mavridis",
   "license": "MIT",
