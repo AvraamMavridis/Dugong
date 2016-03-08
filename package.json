@@ -1,5 +1,5 @@
 {
-  "name": "Dugong",
+  "name": "dugong",
   "version": "1.0.0",
   "description": "Minimal State Container for React Apps using RxJS",
   "scripts": {

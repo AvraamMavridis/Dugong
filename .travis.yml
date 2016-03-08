@@ -4,7 +4,7 @@ node_js:
   - "0.12"
 script:
   - npm install
-  - npm compile
+  - npm run compile
   - npm run test
 install:
   - export DISPLAY=':99.0'
