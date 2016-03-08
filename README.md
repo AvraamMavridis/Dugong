@@ -1,12 +1,15 @@
 # Dugong
 Minimal State Container for React Apps using RxJS
 
+[![NPM](https://nodei.co/npm/dugong.png?mini=true)](https://nodei.co/npm/dugong/)
+
+
 [![npm version](https://badge.fury.io/js/dugong.svg)](https://badge.fury.io/js/dugong)
 [![Build Status](https://travis-ci.org/AvraamMavridis/Dugong.svg?branch=master)](https://travis-ci.org/AvraamMavridis/Dugong)
 [![CocoaPods](https://img.shields.io/cocoapods/l/AFNetworking.svg)]()
 [![semantic-versioning](https://img.shields.io/badge/semantic%20-versioning-green.svg)]()
 
-Dugong is a minimal state single-store container for React that uses RxJS. 
+Dugong is a minimal single-store state container for React that uses RxJS. 
 You can use it with Redux/Flux or any other pattern/framework although that is not nessecary.
 
 # Why Dugong?
@@ -15,7 +18,7 @@ I made Dugong because I wanted a more clear way to know what every component con
 
 # How to pass the data from the Store to the Components
 
-### Create your Store with its initial state
+##### Create your Store with its initial state
 
 ```js
 import { createStore } from 'dugong';
@@ -31,7 +34,7 @@ const initialState =  {
 createStore( initialState );
 ```
 
-### Connect your component with the Store and define which parameters of the store you want to listen.
+##### Connect your component with the Store and define which parameters of the store you want to listen.
 
 ```js
 import { connect } from 'dugong';
@@ -45,7 +48,7 @@ class MyHelloWorldComponent extends Component
 }
 ```
 
-### You can also get the Store and use rxjs methods on it.
+##### You can also get the Store and use rxjs methods on it.
 
 ```js
 import { getStore } from 'dugong';
@@ -66,7 +69,7 @@ class MyHelloWorldComponent extends Component
 
 # How to update the Store
 
-### Dugong is not opinionated on how to structure your application, you can use `updateStore()` directly inside the components.
+##### Dugong is not opinionated on how to structure your application, you can use `updateStore()` directly inside the components.
 
 ```js
 import { updateStore } from 'dugong';
@@ -83,7 +86,7 @@ class MyComponent extends Component
 }
 ```
 
-### You can create services that will update parts of the store and inject them inside your components
+##### You can create services that will update parts of the store and inject them inside your components
 
 ```js
 // UIService
@@ -107,7 +110,7 @@ class MyComponent extends Component
 }
 ```
 
-### ...or you can even dispatch an action with Redux (or anything similar) and then use updateStore to change the global state of your application. 
+##### ...or you can even dispatch an action with Redux (or anything similar) and then use updateStore to change the global state of your application. 
 
 ## Contributing
 Feel free to open issues, make suggestions or send PRs.
