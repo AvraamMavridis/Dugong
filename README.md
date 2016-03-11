@@ -5,7 +5,7 @@ Minimal State Container for React Apps using RxJS
 
 
 [![npm version](https://badge.fury.io/js/dugong.svg)](https://badge.fury.io/js/dugong)
-[![Build Status](https://travis-ci.org/AvraamMavridis/Dugong.svg?branch=master)](https://travis-ci.org/AvraamMavridis/Dugong)
+[![Build Status](https://travis-ci.org/AvraamMavridis/dugong.svg?branch=master)](https://travis-ci.org/AvraamMavridis/dugong)
 [![CocoaPods](https://img.shields.io/cocoapods/l/AFNetworking.svg)]()
 [![semantic-versioning](https://img.shields.io/badge/semantic%20-versioning-green.svg)]()
 
