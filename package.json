@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AvraamMavridis/Dugong.git"
+    "url": "git+https://github.com/AvraamMavridis/dugong.git"
   },
   "keywords": [
     "React",
@@ -32,9 +32,9 @@
   "author": "Avraam Mavridis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AvraamMavridis/Dugong/issues"
+    "url": "https://github.com/AvraamMavridis/dugong/issues"
   },
-  "homepage": "https://github.com/AvraamMavridis/Dugong#readme",
+  "homepage": "https://github.com/AvraamMavridis/dugong#readme",
   "peerDependencies": {
     "react": "^0.14.7",
     "rx": "=4.0.0",
