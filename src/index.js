@@ -6,7 +6,7 @@
  */
 
 import { BehaviorSubject } from 'rx';
-import { pick, isEqual }   from 'lodash';
+import { pick } from 'lodash';
 
 const stateSubject = new BehaviorSubject();
 const noop = () => void 0;
@@ -18,18 +18,35 @@ export const getLastState = () => stateSubject.value;
 
 export const connect = ( ...args ) => ( target ) =>
 {
-    const obj = Object.create( target.prototype );
-    const willMount = obj.componentWillMount;
+  const obj = Object.create( target.prototype );
+  const willMount = obj.componentWillMount;
+  const willUnmount = obj.componentWillUnmount;
 
-    target.prototype.componentWillMount = function()
+  target.prototype.componentWillMount = function()
+  {
+    this.stateListener = stateSubject;
+
+    this.stateListener.map( state => args.length ? pick( state, args ) : state )
+                      .subscribe( state => this.setState( state ) );
+
+    willMount ? willMount.call( this ) : noop();
+  };
+
+
+  target.prototype.componentWillUnmount = function()
+  {
+    try
     {
-        stateSubject
-            .filter( state => isEqual( state, getLastState() ) )
-            .map( state => args.length ? pick( state, args ) : state )
-            .subscribe( state => this.setState( state ) );
+      // unsubscribe
+      this.stateListener.dispose();
+    }
+    catch ( e )
+    {
+      // listener has already been removed or component is not mounted any more
+    }
 
-        willMount ? willMount.call( this ) : noop();
-    };
+    willUnmount ? willUnmount.call( this ) : noop();
+  };
 
-    return target;
+  return target;
 };
