@@ -4,6 +4,9 @@ Minimal State Container for React Apps using RxJS
 [![NPM](https://nodei.co/npm/dugong.png?mini=true)](https://nodei.co/npm/dugong/)
 
 
+![Dugong](https://haydensanimalfacts.files.wordpress.com/2014/12/dugong.jpg)
+
+
 [![npm version](https://badge.fury.io/js/dugong.svg)](https://badge.fury.io/js/dugong)
 [![Build Status](https://travis-ci.org/AvraamMavridis/dugong.svg?branch=master)](https://travis-ci.org/AvraamMavridis/dugong)
 [![CocoaPods](https://img.shields.io/cocoapods/l/AFNetworking.svg)]()
@@ -119,6 +122,7 @@ This project adheres to the Contributor Covenant [code of conduct](http://contri
 ## Contact
 
 E-mail : avr.mav@gmail.com
+
 Twitter: [@avraamakis](https://twitter.com/avraamakis)
 
 ### License
