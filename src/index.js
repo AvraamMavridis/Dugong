@@ -56,7 +56,7 @@
   * React decorator, decorates a React component
   * @return {ReactComponent}
   */
- export const connect = ( ...args ) => ( targ ) => isReactComponent( target, ( target ) =>
+ export const connect = ( ...args ) => ( target ) => isReactComponent( target, ( target ) =>
  {
    const obj = Object.create( target.prototype );
    const willMount = obj.componentWillMount || noop;

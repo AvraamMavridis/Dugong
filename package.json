@@ -1,6 +1,6 @@
 {
   "name": "dugong",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Minimal State Container for React Apps using RxJS",
   "scripts": {
     "test": "npm run compiletests && mocha --compilers js:babel-register --require babel-polyfill",
