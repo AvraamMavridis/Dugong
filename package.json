@@ -67,7 +67,7 @@
     "sinon-chai": "^2.8.0"
   },
   "dependencies": {
-    "lodash": "^4.11.1",
+    "lodash": "^4.11.2",
     "rx": "^4.1.0"
   }
 }
