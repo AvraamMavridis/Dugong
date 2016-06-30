@@ -3,6 +3,7 @@ node_js:
   - "4.1"
   - "0.12"
 script:
+  - rm -rf node_modules
   - npm install
   - npm run compile
   - npm run test
