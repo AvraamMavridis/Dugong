@@ -64,7 +64,7 @@
     "react-addons-test-utils": "^15.0.1",
     "react-dom": "^15.0.1",
     "rx": "^4.1.0",
-    "sinon": "^1.17.3",
+    "sinon": "^1.17.5",
     "sinon-chai": "^2.8.0"
   },
   "dependencies": {
