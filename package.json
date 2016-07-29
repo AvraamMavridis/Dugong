@@ -1,6 +1,6 @@
 {
   "name": "dugong",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Minimal State Container for React Apps using RxJS",
   "scripts": {
     "test": "npm run compiletests && mocha --compilers js:babel-register --require babel-polyfill",
@@ -54,9 +54,10 @@
     "babel-register": "^6.11.6",
     "chai": "^3.5.0",
     "enzyme": "^2.4.1",
-    "eslint": "^3.1.1",
+    "eslint": "=2.9.0",
     "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-import": "^1.7.0",
+    "eslint-plugin-jsx-a11y": "=1.2.0",
     "eslint-plugin-react": "^5.2.2",
     "mocha": "^2.5.3",
     "promise": "^7.1.1",
