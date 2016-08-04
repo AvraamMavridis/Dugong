@@ -1,6 +1,6 @@
 {
   "name": "dugong",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Minimal State Container for React Apps using RxJS",
   "scripts": {
     "test": "npm run compiletests && mocha --compilers js:babel-register --require babel-polyfill",
@@ -36,8 +36,8 @@
   },
   "homepage": "https://github.com/AvraamMavridis/dugong#readme",
   "peerDependencies": {
-    "react": "^15.0.1",
-    "lodash": "^4.6.1"
+    "react": "^15.3.0",
+    "lodash": "^4.14.1"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
@@ -54,16 +54,16 @@
     "babel-register": "^6.11.6",
     "chai": "^3.5.0",
     "enzyme": "^2.4.1",
-    "eslint": "=2.9.0",
-    "eslint-config-airbnb": "^9.0.1",
+    "eslint": "^3.2.2",
+    "eslint-config-airbnb": "^10.0.0",
     "eslint-plugin-import": "^1.7.0",
-    "eslint-plugin-jsx-a11y": "=1.2.0",
-    "eslint-plugin-react": "^5.2.2",
-    "mocha": "^2.5.3",
+    "eslint-plugin-jsx-a11y": "^2.0.1",
+    "eslint-plugin-react": "^6.0.0",
+    "mocha": "^3.0.1",
     "promise": "^7.1.1",
     "react": "^15.2.1",
-    "react-addons-test-utils": "^15.0.1",
-    "react-dom": "^15.2.1",
+    "react-addons-test-utils": "^15.3.0",
+    "react-dom": "^15.3.0",
     "rx": "^4.1.0",
     "sinon": "^1.17.5",
     "sinon-chai": "^2.8.0"
