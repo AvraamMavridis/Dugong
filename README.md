@@ -128,6 +128,3 @@ Twitter: [@avraamakis](https://twitter.com/avraamakis)
 ### License
 MIT
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/AvraamMavridis/dugong/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
