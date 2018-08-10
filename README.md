@@ -1,4 +1,4 @@
-# Dugong (Work in progress)
+# Dugong
 Minimal State Container for React Apps using RxJS
 
 [![NPM](https://nodei.co/npm/dugong.png?mini=true)](https://nodei.co/npm/dugong/)
