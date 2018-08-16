@@ -14,5 +14,5 @@ node_modules/
 .tmp
 config.js
 npm-debug.log
-test/
 lib/
+coverage/
