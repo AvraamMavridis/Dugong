@@ -1,2 +1,4 @@
 src/
 tests/
+testsrc/
+coverage/
