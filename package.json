@@ -63,7 +63,7 @@
     "mocha": "^5.2.0",
     "promise": "^8.0.2",
     "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.8.4"
   },
   "dependencies": {
     "lodash": "^4.17.4",
