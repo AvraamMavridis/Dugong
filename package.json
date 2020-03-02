@@ -61,7 +61,7 @@
     "eslint-plugin-react": "^7.11.1",
     "jest": "^23.5.0",
     "mocha": "^5.2.0",
-    "promise": "^8.0.2",
+    "promise": "^8.1.0",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.0.0"
   },
